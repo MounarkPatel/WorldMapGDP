@@ -7,10 +7,7 @@ Created on Wed Jun 27 15:42:48 2018
 """
 
 """
-Unify data via common country name.
-
-Be sure to read the project description page for further information
-about the expected behavior of the program.
+Unify data via common country name. Use pygal to plot wold map with the GDP of each country.
 """
 
 import csv
