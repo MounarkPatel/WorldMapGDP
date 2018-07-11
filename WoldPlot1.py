@@ -66,10 +66,10 @@ def build_map_dict_by_name(gdpinfo, plot_countries, year):
     for code in plot_countries:
         #if country names match
         if plot_countries[code] in stat:
-            #the list of tuples having tuple[0] be an sting value such as "1960"
+            #the keys of dictionary are strings such as '2005' and values such as '5'
             yrs = stat[plot_countries[code]]
             for key in yrs:
-                #checks to go to the right tuple in list
+                #checks to go to the right year such as '2005'
                 if (key == year) and (yrs[key] != '' or yrs[key] != ""):
                     #map the log10 value of yrs[key] to the gdp dictionary
                     gdp[code] = math.log10(float(yrs[key]))
