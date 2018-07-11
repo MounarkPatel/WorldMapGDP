@@ -33,6 +33,7 @@ Linux:
 #
 Type "pip install pygal". For more information about pygal, http://pygal.org/en/stable/installing.html.
 # Running Code 
+NOTE: pygal is a constantly updated module. When you run this code and it gives you an ModuleNotFoundError that means its time to update pygal on your computer. 
 NOTE: There are two files to run example will be given with WorldPlot1.py
 Preffered Method: open Spyder from anaconda. Spyder is open source IDE that automatically comes with several scripting libraries.
 #
@@ -93,3 +94,7 @@ codeinfo =
         
         "data_codes": "ISO3166-1-Alpha-3"    # GDP data code field name
 }
+# SVG files
+Unlike the svg files in GDP_XY_plots, the svg files in this repo are too large for github to "Display the rendered blob". That is why GitHub Desktop should be used. Clone or download the repository onto GitHub Desktop, then open the repository on your local computer. Scroll over to any svg image, right-click and open in any browser. 
+# Testing
+The function test_render_world_map() in both files has four calls to render_world_map for 1960, 1980, 2000 and 2010. Files from WorldPlot1.py would have "world_name" in them while ones from WorldPlot2.py would have "world_code". Once you do side by side comparisons of the both svg files of the same year you can see that when analysis is done using country codes more countires have GDP data. When you run the code in both py files you should get the same eight svg files posted. To see the that the data is correct in these world maps I would reccomend checking the csv file for a few countires in the three categories, for WorldPlot2.py there are two csv files that need to be referenced isp_gdp and isp_country_codes.
