@@ -1,5 +1,5 @@
 # WorldMapGDP
-Two-part project that uses the same GDP data found in GDP_XY_plots to create plots on the world map. This project investigates two ways to clean and unify multiple sets of data. The first way is done with filtering data through country names (WorldPlot1.py) and the second way through country codes (WorldPlot2.py). Doing the scripting with country codes improves the quality of the wolrd map becuase it creates better mapping from pygal country codes to World Bank country names. This comes at the price of having less efficent code and code that is harder to follow. 
+Project that uses the same GDP data found in GDP_XY_plots to create plots on the world map. Investigates one way to clean and unify multiple sets of data. It is done with filtering data through country names (WorldPlot1.py). Doing the scripting with country names can be faulty due to the same countires being spelled differently. 
 # Installing Python 3
 Install python 3. 
 Preffered Method: 
@@ -34,7 +34,6 @@ Linux:
 Type "pip install pygal". For more information about pygal, http://pygal.org/en/stable/installing.html.
 # Running Code 
 NOTE: pygal is a constantly updated module. When you run this code and it gives you an ModuleNotFoundError that means its time to update pygal on your computer. 
-NOTE: There are two files to run example will be given with WorldPlot1.py
 Preffered Method: open Spyder from anaconda. Spyder is open source IDE that automatically comes with several scripting libraries.
 #
 OS X: 
@@ -78,23 +77,8 @@ gdpinfo =
         "country_code": "Country Code"   # Country code field name
         
 }
-# Additional dictionary for WorldPlot2.py
-Since WorldPlot2.py uses country codes instead of country names another dictionary is needed. As the format of the CSV file that stores the country codes could change (or you could acquire data from somewhere else), the functions that operate directly on the country code data will all take a "codeinfo" dictionary that provides information about the file. 
 
-codeinfo = 
-{
-
-        "codefile": "isp_country_codes.csv", # Name of the country code CSV file
-        
-        "separator": ",",                    # Separator character in CSV file
-        
-        "quote": '"',                        # Quote character in CSV file
-        
-        "plot_codes": "ISO3166-1-Alpha-2",   # Plot code field name
-        
-        "data_codes": "ISO3166-1-Alpha-3"    # GDP data code field name
-}
 # SVG files
 Unlike the svg files in GDP_XY_plots, the svg files in this repo are too large for github to "Display the rendered blob". That is why GitHub Desktop should be used. Clone or download the repository onto GitHub Desktop, then open the repository on your local computer. Scroll over to any svg image, right-click and open in any browser. 
 # Testing
-The function test_render_world_map() in both files has four calls to render_world_map for 1960, 1980, 2000 and 2010. Files from WorldPlot1.py would have "world_name" in them while ones from WorldPlot2.py would have "world_code". Once you do side by side comparisons of the both svg files of the same year you can see that when analysis is done using country codes more countires have GDP data. When you run the code in both py files you should get the same eight svg files posted. To see the that the data is correct in these world maps I would reccomend checking the csv file for a few countires in the three categories, for WorldPlot2.py there are two csv files that need to be referenced isp_gdp and isp_country_codes.
+The function test_render_world_map() has four calls to render_world_map for 1960, 1980, 2000 and 2010. Files from WorldPlot1.py would have "world_name" in them. When you run the code in WorldPlot1.py you should get the same four svg files posted. To see that the data is correct in these world maps I would reccomend checking the csv file for a few countires in the three categories.
