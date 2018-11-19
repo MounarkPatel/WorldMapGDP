@@ -47,11 +47,11 @@ def build_map_dict_by_name(gdpinfo, plot_countries, year):
 
     Output:
       A tuple containing a dictionary and two sets.  The dictionary
-      maps country codes from plot_countries to the log (base 10) of
+      maps country names from plot_countries to the log (base 10) of
       the GDP value for that country in the specified year.  The first
-      set contains the country codes from plot_countries that were not
+      set contains the country names from plot_countries that were not
       found in the GDP data file.  The second set contains the country
-      codes from plot_countries that were found in the GDP data file, but
+      names from plot_countries that were found in the GDP data file, but
       have no GDP data for the specified year.
     """
     gdp = {} # for the first element of tuple
