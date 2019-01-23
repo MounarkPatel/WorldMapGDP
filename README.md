@@ -1,5 +1,5 @@
 # WorldMapGDP
-Project that uses the same GDP data found in GDP_XY_plots to create plots on the world map. Investigates one way to clean and unify multiple sets of data. It is done with filtering data through country names (WorldPlot1.py). Doing the scripting with country names can be faulty due to the same countires being spelled differently. 
+Project that uses the same GDP data found in GDP_XY_plots to create plots on the world map. Investigates one way to clean and unify data. It is done with filtering data through country names (WorldPlot1.py). Doing the scripting with country names can be faulty due to the same countires being spelled differently. 
 # Installing Python 3
 Install python 3. 
 Preffered Method: 
