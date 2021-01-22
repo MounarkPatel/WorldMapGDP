@@ -7,7 +7,7 @@ Created on Wed Jun 27 15:42:48 2018
 """
 
 """
-Unify data via common country name. Use pygal to plot wold map with the GDP of each country.
+Unify data via common country name. Use pygal library to plot world map data with the GDP of each country.
 """
 
 import csv
