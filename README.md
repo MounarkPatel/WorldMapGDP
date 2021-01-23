@@ -1,5 +1,5 @@
 # WorldMapGDP
-Code to read World Bank GDP data from 1960- 2015 and crete a World Map. Investigates one way to clean and unify data. It is done with filtering data through country names (WorldPlot1.py). Doing the scripting with country names can be faulty due to the same countires being spelled differently. 
+Code to read World Bank GDP data from 1960 - 2015 and crete a World Map for a specific year. Every country either has data for that year, it is missing from the CSV file, or there is no GDP data.
 # Installing Python 3
 Install python 3. 
 Preffered Method: 
