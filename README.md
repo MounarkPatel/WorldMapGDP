@@ -1,5 +1,5 @@
 # WorldMapGDP
-Code to read World Bank GDP data from 1960 - 2015 and crete a world map for a specific year. Every country either has data for that year, it is missing from the CSV file, or there is no GDP data. Used the pygal and csv module in python.
+Code to read the World Bank GDP data from 1960 - 2015 and crete a world map for a specific year. Every country either has data for that year, it is missing from the CSV file, or there is no GDP data. Used the pygal and csv module in python.
 # Installing Python 3
 Install python 3. 
 Preffered Method: 
